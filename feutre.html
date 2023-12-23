@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+
+    <title>Dessin au feutre</title>
+    <link href="css/style2.css" rel="stylesheet" > 
+    <link href="css/type.css" rel="stylesheet" > 
+    <link rel="website icon" type="jpg" href="image/JCUG5984.PNG">
+    <style>
+        nav .navbar #a1 a:visited{
+    color: #eee785;
+    border-bottom: 2px  solid #eee785 ;
+    }
+    nav .navbar #a2 a:visited{
+    color: #f39c74;
+    border-bottom: 2px  solid #f39c74 ;
+    }
+    nav .navbar #a3 a:visited{
+    color: #85b6ee;
+    border-bottom: 2px  solid #85b6ee ;
+}
+    </style>
+</head>
+<body style=" background-image: url(image/feutey.jpg);">
+    <nav>
+        <a href="#" id="logo"><img src="image/JCUG5984.PNG" width="150" height="100"></a>
+        <ul class="navbar">
+            <li id="a1"><a href="accueil.html#type">Accueil</a></li>
+            <li id="a2"><a href="#">peinture</a></li>
+            <li id="a3"><a href="#mater2">Materiel</a></li>
+        </ul>
+    </nav>
+    <section class="apropos" id="def">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte" id="dessin"><d><span>L</span>e dessin au feutre</d></h2>
+            <p>Le dessin au feutre est une technique artistique qui consiste à créer des œuvres en utilisant des feutres comme principal outil de dessin. Les feutres utilisés peuvent varier en taille, en pointe et en couleur, offrant ainsi une large gamme de possibilités artistiques. Cette méthode permet de réaliser des dessins, des croquis ou des illustrations avec des lignes nettes et vibrantes, des aplats de couleur et parfois des superpositions pour créer des effets de texture ou de dégradé. Les feutres offrent une grande précision et sont souvent utilisés pour produire des œuvres aux contours clairs et définis, que ce soit pour des travaux artistiques, des esquisses rapides ou des illustrations détaillées.</p>            </div>
+            <div class="col50">
+                <div class="img">
+                    <img src="image/mrafeutey.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section id="def">
+        <div class="sec">
+            <div id="mater" class="titre" >
+                <h2 class="titre-texte"><d><span>L</span>es materiel</d></h2>
+                <p>Pour dessiner au stylo feutres,vous aurez besoin de certains matériaux de base</p>
+                <table>
+                    <tr>
+                        <th>outil</th>
+                        <th>image</th>
+                    </tr>
+                    <tr>
+                        <td>Stylos feutres</td>
+                        <td><img src="image/stylofeutey.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Papier</td>
+                        <td><img src="image/paperstylo.jpg"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+         const nav =document.querySelector('nav');
+         nav.classList.toggle("sticky", window.scrollY > 0 );
+     });
+    </script>
+</body>
+</html>

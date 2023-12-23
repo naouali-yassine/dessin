@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <title>Leonardo da Vinci</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/artistes.css">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <style>
+        .arti .content{
+            grid-template-columns: repeat(2,auto);
+            margin-top: 80px;
+        }
+        .arti h2{
+            margin-top: -100px;
+            margin-left: 20px;
+        }
+        .paintings{
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" id="logo"><img src="image/JCUG5984.PNG" width="150" height="100"></a>
+        <ul class="navbar">
+            <li><a href="accueil.html" class="nbar">Accueil</a></li>
+            <li><a href="#" class="nbar">L'Artistes</a></li>
+            <li><a href="#row" class="nbar">Histoire</a></li>
+            <li><a href="#tableaux" class="nbar">tableaux</a></li>
+        </ul>
+    </nav>
+    <header class="arti" style="background-image: url(./image/Leonardo\ da\ Vinciheader.jpg);">
+        <div class="content">
+            <div class="ident">
+                <p>
+                    Léonard de Vinci (1452-1519) était un polymathe de la Renaissance, reconnu pour ses talents en peinture, sculpture, architecture, sciences et inventions. Célèbre pour la "Mona Lisa" et "La Cène", il a également contribué à l'anatomie, à l'ingénierie et à d'autres disciplines scientifiques. Ses croquis novateurs de machines volantes et ses idées ont laissé une empreinte durable sur les arts, les sciences et la culture.
+                </p>
+            </div>
+            <div class="titre">
+                <h2>Leonardo da Vinci</h2>
+            </div>
+        </div>
+    </header>
+    <div>
+    <div id="deff">
+        <section class="def">
+            <div class="row" id="row" >
+                <div class="col50">
+                    <h2 class="titre-texte" id="dessin"><d><span>S</span>on Histoire</d></h2>
+                    <p>Leonardo a été chargé de peindre le portrait de Lisa par son mari, Francesco del Giocondo, probablement pour célébrer la naissance de leur fils. Mais le tableau a transcendé son objectif initial. Léonard a mis son génie artistique et scientifique dans le portrait, employant des techniques innovantes comme le sfumato (un effet brumeux) et le clair-obscur (un jeu d'ombres et de lumière) pour créer un niveau de réalisme et de profondeur sans précédent.
+                        Au-delà de la toile : un héritage de mystère :
+                        La renommée de Mona Lisa ne tient pas seulement à sa beauté. Il est également enveloppé d’une aura de mystère. L'identité de la femme, son sourire énigmatique et le dévouement obsessionnel de Léonard à la peinture ont alimenté des spéculations et des intrigues sans fin.  </p>
+                  </div>
+                <div class="video-container">
+                    <video class="infinite-loop" autoplay loop muted>
+                      <source src="./image/devincivid.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="paintings" style="background-image: url(./image/Leonardo\ da\ Vinciheader2.jpeg);"
+    id="tableaux">
+    <div class="external">
+        <div class="horizontal-scroll-wrapper">
+          <div class="img-wrapper slower">
+            <a><img src="image/l1.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster">
+              <a><img src="./image/l2.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower vertical">
+                <a><img src="./image/l3.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower slower-down">
+              <a><img src="./image/mona-lisa.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper">
+            <a><img src="./image/l4.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower">
+            <a><img src="./image/l5.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster1">
+            <a><img src="./image/l6.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower slower2">
+            <a><img src="./image/l7.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper">
+            <a><img src="./image/l8.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower">
+            <a><img src="./image/l9.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower last">
+            <a><img src="./image/l10.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+         const nav =document.querySelector('nav');
+         nav.classList.toggle("sticky", window.scrollY > 0 );
+     });
+    </script>
+</body>
+</html>

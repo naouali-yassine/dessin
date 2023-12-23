@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+
+    <title>Dessin au stylo</title>
+    <link href="css/style2.css" rel="stylesheet" > 
+    <link href="css/type.css" rel="stylesheet" > 
+    <link rel="website icon" type="jpg" href="image/JCUG5984.PNG">
+</head>
+<body style=" background-image: url(image/stylobg.jpg);">
+    <nav>
+        <a href="#" id="logo"><img src="image/JCUG5984.PNG" width="150" height="100"></a>
+        <ul class="navbar">
+            <li><a href="accueil.html#type">Accueil</a></li>
+            <li><a href="#">peinture</a></li>
+            <li><a href="#mater2">Materiel</a></li>
+        </ul>
+    </nav>
+    <section class="apropos" id="def">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte" id="dessin"><d><span>L</span>e dessin au stylo</d></h2>
+                <p>Le dessin au stylo fait référence à la création d'œuvres artistiques à l'aide de stylos à encre. Cette méthode artistique implique l'utilisation de stylos à bille, stylos-feutres, stylos-plumes ou autres instruments d'écriture similaires pour réaliser des dessins, des croquis ou des illustrations. Les dessins au stylo peuvent varier en style et en technique, allant des esquisses rapides et informelles aux œuvres plus élaborées et détaillées, utilisant les différentes qualités de lignes, d'ombres et de textures que permet l'outil choisi.</p>    
+            </div>
+            <div class="col50">
+                <div class="img">
+                    <img src="image/penbg.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section id="def">
+        <div class="sec">
+            <div id="mater" class="titre" >
+                <h2 class="titre-texte"><d><span>L</span>es materiel</d></h2>
+                <p>Pour dessiner au stylo,vous aurez besoin de certains matériaux de base</p>
+                <table>
+                    <tr>
+                        <th>outil</th>
+                        <th>image</th>
+                    </tr>
+                    <tr>
+                        <td>Stylos</td>
+                        <td><img src="image/stylopn.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Papier</td>
+                        <td><img src="image/paperstylo.jpg"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+         const nav =document.querySelector('nav');
+         nav.classList.toggle("sticky", window.scrollY > 0 );
+     });
+    </script>
+</body>
+</html>

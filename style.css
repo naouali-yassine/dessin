@@ -1,0 +1,358 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth ;
+    text-decoration: none;
+}
+p{
+    font-weight: 300;
+    color:#000000;
+}
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    transition:0.5s ;
+    justify-items: center;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+header .navbar .nbar{
+    margin: 0 5px;
+    padding: 0 10px;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background: #0093FC;
+    margin-top: -10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-reserve:hover{
+    background: #0093FC;
+    transition: ease-out;
+}
+header .navbar li a:hover{
+    color: #0093FC;
+    border-bottom: 2px  solid #0093FC ;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-image: url(./image/3490537.jpg);
+    background-size: cover;
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center ;
+}
+
+.banniere .contenu h2{
+    color: rgba(255, 166, 0, 0.993);
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.btn{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 166, 0, 0.993);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+.banniere .contenu p{
+    font-family:monospace;
+    
+}
+#re{
+    text-align: center;
+}
+.btn0{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: #0077cc;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.btn0:hover{
+    letter-spacing: 4px;
+}
+.tit{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenu p:nth-child(2){
+    color: rgba(0, 0, 0, 0.993);
+    font-size: 1.2em;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    display: grid;
+    grid-template-columns: 75% auto;
+}
+
+.row .col50{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+    .titre-texte{
+        color: rgb(74, 28, 160);
+        font-size: 2em;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+.titre-texte span{
+    color: #0093FC;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img{
+    height: 350px;
+    width: 400px;
+    position: relative;
+    margin-left: -250px;
+}
+.btn1{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: #0093FC;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.btn1:hover{
+    letter-spacing: 4px;
+}
+.titre{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.type{
+    margin-top: -100px;
+}
+
+.type .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.type .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.type .contenu .box:hover{
+    width: 375px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.411);
+}
+
+.type .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.type .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.type .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.type .contenu .box .text h3{
+    font-weight: 400;
+}
+
+.artistes{
+    margin-top: -100px;
+}
+
+.artistes .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.artistes .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.artistes .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit:cover;
+}
+
+.artistes .contenu .box h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+}
+
+.inscrit{
+    background-image: url(./image/PQ2TOE.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: unset;
+}
+.inscritform{
+    padding: 10px 10px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    border-radius: 15px;
+}
+
+.inscritform form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inscritform form input,
+.inscritform form {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #111;
+    outline:none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.inscritform form input[type=submit]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background:#0093FC;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.inscrit .titre-text span{
+    color: #0093FC;
+    font-size: 2em;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 0px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky li a:hover{
+    color:#0093FC;
+    border-bottom: 5px solid #0093FC;
+}
+
+@media screen and (max-width:750px){
+    section{
+        width: 100%;
+    }
+    #artistes{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:350px){
+    #titleimg{
+        grid-template-columns: 1fr;
+    }
+}

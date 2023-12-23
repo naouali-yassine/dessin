@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <title>Vincent van Gogh</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/artistes.css">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <style>
+        .arti .content{
+            grid-template-columns: repeat(2,auto);
+            gap: 100px;
+            margin-top: 80px;
+        }
+        .arti h2{
+            margin-top: -100px;
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" id="logo"><img src="image/JCUG5984.PNG" width="150" height="100"></a>
+        <ul class="navbar">
+            <li><a href="accueil.html" class="nbar">Accueil</a></li>
+            <li><a href="#" class="nbar">L'Artistes</a></li>
+            <li><a href="#row" class="nbar">Histoire</a></li>
+            <li><a href="#tableaux" class="nbar">tableaux</a></li>
+        </ul>
+    </nav>
+    <header class="arti" style="background-image: url(./image/van_header.png);">
+        <div class="content">
+            <div class="titre">
+                <h2>Vincent van Gogh</h2>
+            </div>
+            <div class="ident">
+                <p>
+                    Vincent van Gogh (1853/1890) était un peintre post-impressionniste néerlandais.Il est célèbre pour ses œuvres expressives et vibrantes, caractérisées par des couleurs audacieuses et une touche distinctive. Malgré des défis de santé mentale et des difficultés financières tout au long de sa vie, son impact sur le monde de l'art a été profond, et il est considéré comme l'une des figures les plus influentes de l'histoire de l'art occidental.
+                </p>
+            </div>
+        </div>
+    </header>
+    <div>
+    <div id="deff">
+        <section class="def">
+            <div class="row" id="row" >
+                <div class="col50">
+                    <h2 class="titre-texte" id="dessin"><d><span>S</span>on Histoire</d></h2>
+                    <p>Vincent van Gogh, un peintre néerlandais post-impressionniste, a entamé son parcours artistique à la fin de sa vingtaine, développant un style unique caractérisé par des couleurs vives et des coups de pinceau expressifs. Malgré un talent indéniable, van Gogh a fait face à des difficultés financières et à une reconnaissance limitée de son vivant. Le sommet de ses luttes en matière de santé mentale survint en 1888 lorsqu'il se coupa infamement une partie de son oreille gauche à la suite d'une dispute avec le peintre Paul Gauguin. Cet acte énigmatique, souvent attribué à ses tourments émotionnels, marqua un tournant dans sa vie. La détermination de van Gogh à continuer de peindre, même au milieu de tourments personnels, souligne son engagement inébranlable envers son art. Malgré sa fin tragique en 1890 à l'âge de 37 ans, le legs de van Gogh perdure, ses chefs-d'œuvre émotionnellement chargés demeurant des symboles emblématiques dans le monde de l'art occidental.</p>
+                  </div>
+                <div class="video-container">
+                    <video class="infinite-loop" autoplay loop muted>
+                      <source src="./image/van_video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="paintings" style="background-image: url(./image/van_stylebg.gif);"
+    id="tableaux">
+    <div class="external">
+        <div class="horizontal-scroll-wrapper">
+          <div class="img-wrapper slower">
+            <a><img src="image/Les Tournesols.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster">
+              <a><img src="./image/Autoportrait.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower vertical">
+                <a><img src="./image/vangogh.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower slower-down">
+              <a><img src="./image/10.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper">
+            <a><img src="./image/11.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower">
+            <a><img src="./image/4.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster1">
+            <a><img src="./image/5.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower slower2">
+            <a><img src="./image/6.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper">
+            <a><img src="./image/7.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower">
+            <a><img src="./image/8.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower last">
+            <a><img src="./image/9.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+         const nav =document.querySelector('nav');
+         nav.classList.toggle("sticky", window.scrollY > 0 );
+     });
+    </script>
+</body>
+</html>

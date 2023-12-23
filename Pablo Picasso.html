@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <title>Leonardo da Vinci</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/artistes.css">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <style>
+        .arti{
+            background-size: cover;
+        }
+        .arti .content{
+            grid-template-columns: repeat(2,auto);
+            margin-top: 80px;
+            gap: 300px;
+        }
+        .arti h2{
+            margin-top: -100px;
+            margin-left: 100px;
+        }
+        .paintings{
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" id="logo"><img src="image/JCUG5984.PNG" width="150" height="100"></a>
+        <ul class="navbar">
+            <li><a href="accueil.html" class="nbar">Accueil</a></li>
+            <li><a href="#" class="nbar">L'Artistes</a></li>
+            <li><a href="#row" class="nbar">Histoire</a></li>
+            <li><a href="#tableaux" class="nbar">tableaux</a></li>
+        </ul>
+    </nav>
+    <header class="arti" style="background-image: url(./image/Pablo\ Picassoheader.jpg);">
+        <div class="content">
+            <div class="titre">
+                <h2>Vincent van Gogh</h2>
+            </div>
+            <div class="ident">
+                <p>
+                    Pablo Picasso était un artiste espagnol prolifique du XXe siècle, connu pour être l'un des pionniers du mouvement artistique du cubisme. Il est né le 25 octobre 1881 à Malaga, en Espagne, et décédé le 8 avril 1973 à Mougins, en France. Picasso était un peintre, sculpteur, graveur et céramiste de renom, dont les œuvres ont exercé une influence majeure sur l'art moderne.                </p>
+            </div>
+        </div>
+    </header>
+    <div>
+    <div id="deff">
+        <section class="def">
+            <div class="row" id="row" >
+                <div class="col50">
+                    <h2 class="titre-texte" id="dessin"><d><span>S</span>on Histoire</d></h2>
+                    <p>Picasso était un artiste polyvalent, s'aventurant également dans d'autres formes artistiques telles que la sculpture, la céramique, la gravure et la poésie. Ses œuvres les plus connues incluent "Les Demoiselles d'Avignon" et "Guernica", cette dernière étant une dénonciation puissante et émotionnelle des horreurs de la guerre.
+
+                        Son style artistique a continué à évoluer tout au long de sa vie, passant par différentes périodes telles que le surréalisme, le néoclassicisme et l'expressionnisme. Son impact sur l'art moderne est immense, et il est considéré comme l'un des artistes les plus influents et révolutionnaires de tous les temps. Picasso est décédé le 8 avril 1973 à Mougins, en France, laissant derrière lui un héritage artistique inestimable qui continue d'inspirer et de fasciner les générations d'artistes à venir.</p>
+                  </div>
+                <div class="video-container">
+                    <video class="infinite-loop" autoplay loop muted>
+                      <source src="./image/pablovid.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="paintings" style="background-image: url(./image/Pablo-Picassobg.jpg);"
+    id="tableaux">
+    <div class="external">
+        <div class="horizontal-scroll-wrapper">
+          <div class="img-wrapper slower">
+            <a><img src="image/p1.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster">
+              <a><img src="./image/p2.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower vertical">
+                <a><img src="./image/p3.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower slower-down">
+              <a><img src="./image/p4.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper">
+            <a><img src="./image/p5.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower">
+            <a><img src="./image/p6.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster1">
+            <a><img src="./image/Pablo-Picasso.jpg alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower slower2">
+            <a><img src="./image/p7.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper">
+            <a><img src="./image/p8.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower">
+            <a><img src="./image/p9.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower last">
+            <a><img src="./image/p10.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+         const nav =document.querySelector('nav');
+         nav.classList.toggle("sticky", window.scrollY > 0 );
+     });
+    </script>
+</body>
+</html>

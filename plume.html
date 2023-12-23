@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+
+    <title>Dessin à plume</title>
+    <link href="css/style2.css" rel="stylesheet" > 
+    <link href="css/type.css" rel="stylesheet" > 
+    <link rel="website icon" type="jpg" href="image/JCUG5984.PNG">
+    <style>
+        nav .navbar li a{
+    color: #ec99d1;
+    border-bottom: 2px  solid #ec99d1 ;
+}
+nav .navbar li a:visited{
+    color: #ec99d1;
+    border-bottom: 2px  solid #ec99d1 ;
+}
+    </style>
+</head>
+<body style=" background-image: url(image/plumebg.jpg);">
+    <nav>
+        <a href="#" id="logo"><img src="image/JCUG5984.PNG" width="150" height="100"></a>
+        <ul class="navbar">
+            <li><a href="accueil.html#type">Accueil</a></li>
+            <li><a href="#">peinture</a></li>
+            <li><a href="#mater2">Materiel</a></li>
+        </ul>
+    </nav>
+    <section class="apropos" id="def">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte" id="dessin"><d><span>L</span>e dessin à plume</d></h2>
+                <p>Le dessin à la plume utilise une plume fine trempée dans de l'encre ou de l'aquarelle pour créer des lignes et des détails précis sur du papier. Cela permet d'obtenir des effets variés grâce à la pression exercée sur la plume, utilisée pour dessiner des traits, des hachures et des textures.</p>
+            </div>       
+            <div class="col50">
+                <div class="img">
+                    <img src="image/plumemain.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section id="def">
+        <div class="sec">
+            <div id="mater" class="titre" >
+                <h2 class="titre-texte"><d><span>L</span>es materiel</d></h2>
+                <p>Pour dessiner à plume,vous aurez besoin de certains matériaux de base</p>
+                <table>
+                    <tr>
+                        <th>outil</th>
+                        <th>image</th>
+                    </tr>
+                    <tr>
+                        <td>des plumes</td>
+                        <td><img src="image/plumemat.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Planches</td>
+                        <td><img src="image/planche.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Inkwell</td>
+                        <td><img src="image/inkwell.jpg"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+         const nav =document.querySelector('nav');
+         nav.classList.toggle("sticky", window.scrollY > 0 );
+     });
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <title>Vincent van Gogh</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/artistes.css">
+    <link rel="website icon" type="jpg" href="./image/JCUG5984.PNG">
+    <style>
+        .arti{
+            background-size: cover;
+        }
+        .arti .content{
+            grid-template-columns: repeat(2,auto);
+            margin-top: 80px;
+        }
+        .arti h2{
+            margin-top: -150px;
+            
+        }
+        .arti .ident{
+             margin-top: -20px;
+             margin-left: -200px;
+        }
+        .paintings{
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" id="logo"><img src="image/JCUG5984.PNG" width="150" height="100"></a>
+        <ul class="navbar">
+            <li><a href="accueil.html" class="nbar">Accueil</a></li>
+            <li><a href="#" class="nbar">L'Artistes</a></li>
+            <li><a href="#row" class="nbar">Histoire</a></li>
+            <li><a href="#tableaux" class="nbar">tableaux</a></li>
+        </ul>
+    </nav>
+    <header class="arti" style="background-image: url(./image/fridaheader.jpg)" >
+        <div class="content">
+            <div class="ident">
+                <p>
+                    Frida Kahlo, née le 6 juillet 1907 au Mexique, a vécu une vie marquée par la souffrance et la créativité. Elle a survécu à la poliomyélite dans son enfance, mais a été gravement blessée dans un accident de bus à l'âge de 18 ans, subissant de multiples fractures et des lésions internes. Ces blessures ont été le point de départ de sa carrière artistique. Pendant sa convalescence, elle a commencé à peindre des autoportraits, devenant l'une des artistes les plus influentes du Mexique et du monde.
+                </p>
+            </div>
+            <div class="titre">
+                <h2>Leonardo da Vinci</h2>
+            </div>
+        </div>
+    </header>
+    <div>
+    <div id="deff">
+        <section class="def">
+            <div class="row" id="row" >
+                <div class="col50">
+                    <h2 class="titre-texte" id="dessin"><d><span>S</span>a Histoire</d></h2>
+                    <p>Elle s'est mariée à Diego Rivera, également un artiste renommé, et leur relation tumultueuse a eu une grande influence sur son art. Ses peintures reflètent souvent sa douleur physique et émotionnelle, ainsi que son engagement politique et son identité culturelle mexicaine. Les thèmes récurrents dans son travail incluent la douleur, la maternité, l'identité et la culture mexicaine.
+
+                        Frida Kahlo est devenue une icône féministe et LGBTQ+ avant-gardiste pour son époque. Elle est décédée le 13 juillet 1954, laissant derrière elle un héritage artistique puissant et durable. Ses œuvres sont aujourd'hui célébrées dans le monde entier pour leur puissance émotionnelle et leur authenticité.</p>
+                  </div>
+                <div class="video-container">
+                    <video class="infinite-loop" autoplay loop muted>
+                      <source src="./image/fridavid.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="paintings" style="background-image: url(./image/Frida-Kahlobg.jpg);"
+    id="tableaux">
+    <div class="external">
+        <div class="horizontal-scroll-wrapper">
+          <div class="img-wrapper slower">
+            <a><img src="image/f1.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster">
+              <a><img src="./image/f2.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower vertical">
+                <a><img src="./image/f3.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower slower-down">
+              <a><img src="./image/f4.jpg.crdownload" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper">
+            <a><img src="./image/f10.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper slower">
+            <a><img src="./image/f5.jpg" alt=""></a>
+          </div>
+      
+          <div class="img-wrapper faster1">
+            <a><img src="./image/f6.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower slower2">
+            <a><img src="./image/f7.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper">
+            <a><img src="./image/f8.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower">
+            <a><img src="./image/f9.jpg" alt=""></a>
+          </div>
+          
+          <div class="img-wrapper slower last">
+            <a><img src="./image/f11.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+         const nav =document.querySelector('nav');
+         nav.classList.toggle("sticky", window.scrollY > 0 );
+     });
+    </script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth ;
+    text-decoration: none;
+}
+p{
+    font-weight: 300;
+    color:#000000;
+}
+nav{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+    align-items: center;
+    transition:0.5s ;
+    z-index: 100;
+}
+
+nav a{
+    width: 50%;
+}
+
+nav img{
+    margin-left: 50px;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    margin-right: 100px;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 700;
+}
+ 
+.btn-reserve{
+    padding: 10px 20px;
+    background: #0093FC;
+    margin-top: -10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-reserve:hover{
+    background: #0093FC;
+    transition: ease-out;
+}
+nav .navbar li a{
+    color: #ffffff;
+    border-bottom: 2px  solid #ffffff ;
+}
+nav .navbar li a:visited{
+    color: #ffffff;
+    border-bottom: 2px  solid #ffffff ;
+}
+nav .navbar li a:hover{
+    color: #0093FC;
+    border-bottom: 2px  solid #0093FC ;
+}
+nav.sticky{
+    background: #fff;
+    padding: 0px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+nav.sticky li a:visited{
+    color:#0093FC;
+    
+}
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+.banniere{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center ;
+    background-size: cover;
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center ;
+}
+
+.banniere .contenu h2{
+    color: rgba(255, 166, 0, 0.993);
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.btn{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background-color: #0077cc;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+
+#re{
+    text-align: center;
+}
+.btn0{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: #0077cc;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.btn0:hover{
+    letter-spacing: 4px;
+}
+.tit{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenu p:nth-child(2){
+    color: rgba(0, 0, 0, 0.993);
+    font-size: 1.2em;
+}
+#def{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row .col50{
+    position: relative;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.titre-texte{
+    color: rgb(74, 28, 160);
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color: #0093FC;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img{
+    height: 350px;
+    width: 400px;
+    position: relative;
+}
+.btn1{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: #0093FC;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.btn1:hover{
+    letter-spacing: 4px;
+}
+.titre{
+    display: grid;
+    width:100%;
+    justify-items: center
+}
+.type{
+    margin-top: -100px;
+}
+
+.type .contenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.type .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.type .contenu .box:hover{
+    scale: 1.1;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.411);
+}
+
+.type .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.type .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.type .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.type .contenu .box .text h3{
+    font-weight: 400;
+}
+#last_box{
+    margin: 0% 50%;
+}
+
+
+.artistes .contenu{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.artistes .contenu .box{
+    width: 250px;
+    margin: 15px;   
+}
+.artistes .contenu .box a img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.artistes .contenu .box h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inscritform{
+    padding: 10px 10px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    border-radius: 15px;
+}
+
+.inscritform form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inscritform form input,
+.inscritform form {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #111;
+    outline:none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.inscritform form input[type=submit]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background:#0093FC;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.inscrit .titre-text span{
+    color: #0093FC;
+    font-size: 2em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+.inscrit h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+.inscrit h2 {
+	text-align: center;
+}
+
+.inscrit p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+.inscrit span {
+	font-size: 12px;
+}
+
+.inscrit a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.inscrit button {
+	border-radius: 20px;
+	border: 1px solid #0093FC;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.inscrit button:active {
+	transform: scale(0.95);
+}
+
+.inscrit button:focus {
+	outline: none;
+}
+
+.inscrit button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+.inscrit form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.inscrit input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.inscrit .container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+    margin-top:100px;
+}
+
+.inscrit .form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.inscrit .sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 0;
+}
+
+.inscrit .container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.inscrit .sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.inscrit .container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+.inscrit .sign-in-container button{
+    border-color: #0093FC;
+    background-color: #0093FC;
+}
+.inscrit .sign-up-container button{
+    border-color: #ffa600fd;
+    background-color: #ffa600fd;
+}
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.inscrit .overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 99;
+}
+
+.inscrit .container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.inscrit .overlay {
+	background: #0093FC;
+	background: -webkit-linear-gradient(to right, #fc6900, #0093FC);
+	background: linear-gradient(to right, #fc6900, #0093FC);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+    
+}
+
+.inscrit .container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.inscrit .overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.inscrit .overlay-left {
+	transform: translateX(-20%);
+}
+
+.inscrit .container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.inscrit .overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.inscrit .container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    z-index: 0;
+    background-size: cover;
+    width: 100%;
+    background-position: unset;
+}
+.contact{
+    background-color: white;
+    padding: 5px ;
+    z-index: 101;
+    size: 16px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+@media screen and (max-width:780px){
+    .navbar{
+        grid-template-columns: repeat(3,2fr);
+    }
+    .row{
+        grid-template-columns: 1fr;
+    }
+    .type .contenu{
+        grid-template-columns: 1fr;
+    }
+    #last_box{
+        margin:0;
+        margin-left: 20px;
+    }
+    .artistes .contenu{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (max-width:500px){
+    .def .row .col50 .img img , .item .box .imbox .img{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (max-width:450px){
+    #logo{
+        display: none;
+    }
+    .navbar{
+        grid-template-columns: repeat(5,1fr);
+        margin: 0 50px;
+    }
+}
